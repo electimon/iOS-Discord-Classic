@@ -15,6 +15,7 @@
 @interface DCServerCommunicator : NSObject
 
 @property WSWebSocket* websocket;
+@property WSWebSocket *voiceWebsocket;
 @property NSString* token;
 @property NSString* gatewayURL;
 @property NSMutableDictionary* userChannelSettings;

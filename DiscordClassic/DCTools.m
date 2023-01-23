@@ -28,7 +28,6 @@
 			processImage(imageData);
 		});
 	});
-	dispatch_release(downloadQueue);
 }
 
 //Returns a parsed NSDictionary from a json string or nil if something goes wrong
@@ -108,8 +107,17 @@
 		[DCTools convertJsonUser:[jsonMessage valueForKeyPath:@"author"] cache:true];
 	
 	newMessage.author = [DCServerCommunicator.sharedInstance.loadedUsers valueForKey:authorId];
-	
-	newMessage.content = [jsonMessage valueForKey:@"content"];
+   
+    // Set the message type and content, we need todo this to correctly calculate the height for the cell
+    switch ([[jsonMessage valueForKey:@"type"] integerValue]) {
+        case 2:
+            newMessage.type = 2;
+            newMessage.content = @"User has left";
+            break;
+        default:
+            newMessage.type = 0;
+            newMessage.content = [jsonMessage valueForKey:@"content"];
+    }
 	newMessage.snowflake = [jsonMessage valueForKey:@"id"];
 	newMessage.embeddedImages = NSMutableArray.new;
 	newMessage.embeddedImageCount = 0;
@@ -235,7 +243,7 @@
 		
 		//Make sure jsonChannel is a text cannel
 		//we dont want to include voice channels in the text channel list
-		if([[jsonChannel valueForKey:@"type"] isEqual: @0]){
+		if(1){
 			
 			//Allow code is used to determine if the user should see the channel in question.
 			/*
@@ -299,7 +307,7 @@
 				newChannel.name = [jsonChannel valueForKey:@"name"];
 				newChannel.lastMessageId = [jsonChannel valueForKey:@"last_message_id"];
 				newChannel.parentGuild = newGuild;
-				newChannel.type = 0;
+				newChannel.type = [[jsonChannel valueForKey:@"type"] integerValue];
 				
 				if([DCServerCommunicator.sharedInstance.userChannelSettings objectForKey:newChannel.snowflake])
 					newChannel.muted = true;

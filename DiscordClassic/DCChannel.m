@@ -19,11 +19,11 @@
 @implementation DCChannel
 
 -(NSString *)description{
-	return [NSString stringWithFormat:@"[Channel] Snowflake: %@, Type: %i, Read: %d, Name: %@", self.snowflake, self.type, self.unread, self.name];
+	return [NSString stringWithFormat:@"[Channel] Snowflake: %@, Type: %i, Read: %d, Name: %@, Last Message ID: %@", self.snowflake, self.type, self.unread, self.name, self.lastMessageId];
 }
 
 -(void)checkIfRead{
-	self.unread = (!self.muted && self.lastReadMessageId != (id)NSNull.null && ![self.lastReadMessageId isEqualToString:self.lastMessageId]);
+	self.unread = (!self.muted && self.lastReadMessageId != (id)NSNull.null && ![self.lastReadMessageId isEqual:self.lastMessageId]);
 	[self.parentGuild checkIfRead];
 }
 

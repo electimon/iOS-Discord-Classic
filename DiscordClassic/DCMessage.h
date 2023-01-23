@@ -17,6 +17,7 @@
 @property NSMutableArray* embeddedImages;
 @property int contentHeight;
 @property bool pingingUser;
+@property int type;
 
 - (void)deleteMessage;
 - (BOOL)isEqual:(id)other;

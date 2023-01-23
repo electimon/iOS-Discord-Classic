@@ -32,15 +32,6 @@
 - (void)handleReady {
 	//Refresh tableView data on READY notification
   [self.tableView reloadData];
-	
-	if(!self.refreshControl){
-	self.refreshControl = UIRefreshControl.new;
-	self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Reauthenticate"];
-	
-	[self.tableView addSubview:self.refreshControl];
-	
-	[self.refreshControl addTarget:self action:@selector(reconnect) forControlEvents:UIControlEventValueChanged];
-	}
 }
 
 
@@ -64,7 +55,6 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-	
 	if([DCServerCommunicator.sharedInstance.guilds objectAtIndex:indexPath.row] != DCServerCommunicator.sharedInstance.selectedGuild){
 		//Clear the loaded users array for lazy memory management. This will be fleshed out more later
 		DCServerCommunicator.sharedInstance.loadedUsers = NSMutableDictionary.new;
@@ -106,7 +96,6 @@
 
 - (void)reconnect {
 	[DCServerCommunicator.sharedInstance reconnect];
-	[self.refreshControl endRefreshing];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{return 1;}

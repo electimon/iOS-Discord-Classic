@@ -7,24 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		091D28CA21A9D75700C60BEC /* DCInfoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091D28C921A9D75700C60BEC /* DCInfoPageViewController.m */; };
-		09260EC720575AE900083813 /* DCGuild.m in Sources */ = {isa = PBXBuildFile; fileRef = 09260EC620575AE900083813 /* DCGuild.m */; };
-		09260ECA20575BB200083813 /* DCChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09260EC920575BB200083813 /* DCChannel.m */; };
-		095284612055EFD000760073 /* TRMalleableFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 095284602055EFD000760073 /* TRMalleableFrameView.m */; };
-		09685287204D9D590089DE45 /* DCChannelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09685286204D9D590089DE45 /* DCChannelListViewController.m */; };
-		096DD77521A6E62200C7A3B1 /* DCWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096DD77421A6E62200C7A3B1 /* DCWelcomeViewController.m */; };
 		09A2A3122072674000F3D98C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A2A3112072674000F3D98C /* Icon@2x.png */; };
 		09A2A3142072674500F3D98C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A2A3132072674500F3D98C /* Icon.png */; };
-		09A3B6D321A0604500C2411F /* DCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A3B6D221A0604400C2411F /* DCUser.m */; };
-		09A4EA672079220E00DECFD6 /* DCChatTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A4EA662079220E00DECFD6 /* DCChatTableCell.xib */; };
-		09A4EA6F2079266800DECFD6 /* DCChatTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4EA6E2079266800DECFD6 /* DCChatTableCell.m */; };
-		09C344B721A0B984005F8CEE /* DCImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C344B621A0B984005F8CEE /* DCImageViewController.m */; };
 		09C6B925204A0F54007EAC26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C6B924204A0F54007EAC26 /* UIKit.framework */; };
 		09C6B927204A0F54007EAC26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C6B926204A0F54007EAC26 /* Foundation.framework */; };
 		09C6B929204A0F54007EAC26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C6B928204A0F54007EAC26 /* CoreGraphics.framework */; };
-		09C6B92F204A0F54007EAC26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09C6B92D204A0F54007EAC26 /* InfoPlist.strings */; };
-		09C6B931204A0F54007EAC26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C6B930204A0F54007EAC26 /* main.m */; };
-		09C6B935204A0F54007EAC26 /* DCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C6B934204A0F54007EAC26 /* DCAppDelegate.m */; };
 		09C6B98F204A2568007EAC26 /* WSWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C6B988204A17AF007EAC26 /* WSWebSocket.m */; };
 		09C6B990204A256E007EAC26 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C6B97F204A17AF007EAC26 /* NSString+Base64.m */; };
 		09C6B991204A256E007EAC26 /* WSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C6B981204A17AF007EAC26 /* WSFrame.m */; };
@@ -32,56 +19,46 @@
 		09C6B993204A256E007EAC26 /* WSMessageProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C6B985204A17AF007EAC26 /* WSMessageProcessor.m */; };
 		09C6B995204A2614007EAC26 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C6B994204A2614007EAC26 /* CFNetwork.framework */; };
 		09C6B997204A261B007EAC26 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C6B996204A261B007EAC26 /* Security.framework */; };
-		09C8E28B204C2BFD006A1422 /* DCServerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C8E28A204C2BFD006A1422 /* DCServerCommunicator.m */; };
-		09C8E2ED204C3B64006A1422 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C8E2EC204C3B64006A1422 /* Storyboard.storyboard */; };
-		09D776992189427100609134 /* DCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D776982189427100609134 /* DCMessage.m */; };
-		09D84D0C205F36B90070020A /* DCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D84D0B205F36B90070020A /* DCSettingsViewController.m */; };
-		09DD1FA2204F35FD00153EC7 /* DCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DD1FA1204F35FD00153EC7 /* DCChatViewController.m */; };
 		09E2DB7C20789C9700267A62 /* UINavigationBarTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E2DB7A20789C9700267A62 /* UINavigationBarTexture.png */; };
 		09E2DB7D20789C9700267A62 /* UINavigationBarTexture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E2DB7B20789C9700267A62 /* UINavigationBarTexture@2x.png */; };
-		09E3ED262069F21200E90DA1 /* DCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E3ED252069F21200E90DA1 /* DCTools.m */; };
 		09F4C6EF21A6EBD40018F312 /* BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F4C6E821A6EBD40018F312 /* BButton.m */; };
 		09F4C6F021A6EBD40018F312 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F4C6EA21A6EBD40018F312 /* NSString+FontAwesome.m */; };
 		09F4C6F121A6EBD40018F312 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09F4C6EC21A6EBD40018F312 /* FontAwesome.ttf */; };
 		09F4C6F221A6EBD40018F312 /* UIColor+BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F4C6EE21A6EBD40018F312 /* UIColor+BButton.m */; };
-		09FF02F7205EF9DD00BCBA8D /* DCGuildListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E183BC205EF65000FE90E8 /* DCGuildListViewController.m */; };
-		09FF02F8205EF9DF00BCBA8D /* DCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E183B9205EF64700FE90E8 /* DCViewController.m */; };
 		09FF0301205EFB8800BCBA8D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09FF0300205EFB8800BCBA8D /* Default-568h@2x.png */; };
+		2B127B70297B80F300DF94E4 /* TRMalleableFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B6F297B80F300DF94E4 /* TRMalleableFrameView.m */; };
+		2B127B7B297B816300DF94E4 /* Discord Classic-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B127B76297B816300DF94E4 /* Discord Classic-Info.plist */; };
+		2B127B7C297B816300DF94E4 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2B127B78297B816300DF94E4 /* en.lproj */; };
+		2B127B91297B829100DF94E4 /* DCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B7F297B829100DF94E4 /* DCAppDelegate.m */; };
+		2B127B92297B829100DF94E4 /* DCChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B80297B829100DF94E4 /* DCChannel.m */; };
+		2B127B93297B829100DF94E4 /* DCChannelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B81297B829100DF94E4 /* DCChannelListViewController.m */; };
+		2B127B94297B829100DF94E4 /* DCChatTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B82297B829100DF94E4 /* DCChatTableCell.m */; };
+		2B127B95297B829100DF94E4 /* DCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B83297B829100DF94E4 /* DCChatViewController.m */; };
+		2B127B96297B829100DF94E4 /* DCGuild.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B84297B829100DF94E4 /* DCGuild.m */; };
+		2B127B97297B829100DF94E4 /* DCGuildListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B85297B829100DF94E4 /* DCGuildListViewController.m */; };
+		2B127B98297B829100DF94E4 /* DCImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B86297B829100DF94E4 /* DCImageViewController.m */; };
+		2B127B99297B829100DF94E4 /* DCInfoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B87297B829100DF94E4 /* DCInfoPageViewController.m */; };
+		2B127B9A297B829100DF94E4 /* DCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B88297B829100DF94E4 /* DCMessage.m */; };
+		2B127B9B297B829100DF94E4 /* DCServerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B89297B829100DF94E4 /* DCServerCommunicator.m */; };
+		2B127B9C297B829100DF94E4 /* DCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B8A297B829100DF94E4 /* DCSettingsViewController.m */; };
+		2B127B9D297B829100DF94E4 /* DCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B8B297B829100DF94E4 /* DCTools.m */; };
+		2B127B9E297B829100DF94E4 /* DCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B8C297B829100DF94E4 /* DCUser.m */; };
+		2B127B9F297B829100DF94E4 /* DCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B8D297B829100DF94E4 /* DCViewController.m */; };
+		2B127BA0297B829100DF94E4 /* DCWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B8E297B829100DF94E4 /* DCWelcomeViewController.m */; };
+		2B127BA1297B829100DF94E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B8F297B829100DF94E4 /* main.m */; };
+		2B127BA2297B829100DF94E4 /* TRMalleableFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127B90297B829100DF94E4 /* TRMalleableFrameView.m */; };
+		2B127BB5297B82D900DF94E4 /* DCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B127BB4297B82D900DF94E4 /* DCViewController.xib */; };
+		2B127BB9297B82FC00DF94E4 /* DCChatTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B127BB8297B82FC00DF94E4 /* DCChatTableCell.xib */; };
+		2B127BBB297B830300DF94E4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B127BBA297B830300DF94E4 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		090C6BCF20784DDD00EC552F /* DCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCMessage.h; sourceTree = "<group>"; };
-		091D28C821A9D75700C60BEC /* DCInfoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCInfoPageViewController.h; sourceTree = "<group>"; };
-		091D28C921A9D75700C60BEC /* DCInfoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCInfoPageViewController.m; sourceTree = "<group>"; };
-		09260EC520575AE900083813 /* DCGuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCGuild.h; sourceTree = "<group>"; };
-		09260EC620575AE900083813 /* DCGuild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCGuild.m; sourceTree = "<group>"; };
-		09260EC820575BB200083813 /* DCChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCChannel.h; sourceTree = "<group>"; };
-		09260EC920575BB200083813 /* DCChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCChannel.m; sourceTree = "<group>"; };
-		0952845F2055EFCF00760073 /* TRMalleableFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRMalleableFrameView.h; path = "Discord Classic/TRMalleableFrameView.h"; sourceTree = "<group>"; };
-		095284602055EFD000760073 /* TRMalleableFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRMalleableFrameView.m; path = "Discord Classic/TRMalleableFrameView.m"; sourceTree = "<group>"; };
-		09685285204D9D590089DE45 /* DCChannelListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCChannelListViewController.h; sourceTree = "<group>"; };
-		09685286204D9D590089DE45 /* DCChannelListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCChannelListViewController.m; sourceTree = "<group>"; };
-		096DD77321A6E62200C7A3B1 /* DCWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCWelcomeViewController.h; sourceTree = "<group>"; };
-		096DD77421A6E62200C7A3B1 /* DCWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCWelcomeViewController.m; sourceTree = "<group>"; };
 		09A2A3112072674000F3D98C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		09A2A3132072674500F3D98C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		09A3B6D121A0604400C2411F /* DCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUser.h; sourceTree = "<group>"; };
-		09A3B6D221A0604400C2411F /* DCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCUser.m; sourceTree = "<group>"; };
-		09A4EA662079220E00DECFD6 /* DCChatTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DCChatTableCell.xib; path = ../DCChatTableCell.xib; sourceTree = "<group>"; };
-		09A4EA6D2079266800DECFD6 /* DCChatTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCChatTableCell.h; sourceTree = "<group>"; };
-		09A4EA6E2079266800DECFD6 /* DCChatTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCChatTableCell.m; sourceTree = "<group>"; };
 		09C0F691204E4823000C8EA6 /* Discord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discord.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		09C344B521A0B984005F8CEE /* DCImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCImageViewController.h; sourceTree = "<group>"; };
-		09C344B621A0B984005F8CEE /* DCImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCImageViewController.m; sourceTree = "<group>"; };
 		09C6B924204A0F54007EAC26 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		09C6B926204A0F54007EAC26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		09C6B928204A0F54007EAC26 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		09C6B92C204A0F54007EAC26 /* Discord Classic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Discord Classic-Info.plist"; sourceTree = "<group>"; };
-		09C6B92E204A0F54007EAC26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		09C6B930204A0F54007EAC26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		09C6B932204A0F54007EAC26 /* Discord Classic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Discord Classic-Prefix.pch"; sourceTree = "<group>"; };
-		09C6B933204A0F54007EAC26 /* DCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCAppDelegate.h; sourceTree = "<group>"; };
-		09C6B934204A0F54007EAC26 /* DCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCAppDelegate.m; sourceTree = "<group>"; };
 		09C6B945204A0F55007EAC26 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		09C6B97E204A17AF007EAC26 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Base64.h"; path = "Websocket/NSString+Base64.h"; sourceTree = "<group>"; };
 		09C6B97F204A17AF007EAC26 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Base64.m"; path = "Websocket/NSString+Base64.m"; sourceTree = "<group>"; };
@@ -96,22 +73,8 @@
 		09C6B988204A17AF007EAC26 /* WSWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSWebSocket.m; path = Websocket/WSWebSocket.m; sourceTree = "<group>"; };
 		09C6B994204A2614007EAC26 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		09C6B996204A261B007EAC26 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		09C8E289204C2BFD006A1422 /* DCServerCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCServerCommunicator.h; sourceTree = "<group>"; };
-		09C8E28A204C2BFD006A1422 /* DCServerCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCServerCommunicator.m; sourceTree = "<group>"; };
-		09C8E2EC204C3B64006A1422 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
-		09D776982189427100609134 /* DCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCMessage.m; sourceTree = "<group>"; };
-		09D84D0A205F36B90070020A /* DCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSettingsViewController.h; sourceTree = "<group>"; };
-		09D84D0B205F36B90070020A /* DCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSettingsViewController.m; sourceTree = "<group>"; };
-		09DD1FA0204F35FD00153EC7 /* DCChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCChatViewController.h; sourceTree = "<group>"; };
-		09DD1FA1204F35FD00153EC7 /* DCChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCChatViewController.m; sourceTree = "<group>"; };
-		09E183B8205EF64700FE90E8 /* DCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCViewController.h; sourceTree = "<group>"; };
-		09E183B9205EF64700FE90E8 /* DCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCViewController.m; sourceTree = "<group>"; };
-		09E183BB205EF65000FE90E8 /* DCGuildListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCGuildListViewController.h; sourceTree = "<group>"; };
-		09E183BC205EF65000FE90E8 /* DCGuildListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCGuildListViewController.m; sourceTree = "<group>"; };
 		09E2DB7A20789C9700267A62 /* UINavigationBarTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UINavigationBarTexture.png; sourceTree = "<group>"; };
 		09E2DB7B20789C9700267A62 /* UINavigationBarTexture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UINavigationBarTexture@2x.png"; sourceTree = "<group>"; };
-		09E3ED242069F21200E90DA1 /* DCTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTools.h; sourceTree = "<group>"; };
-		09E3ED252069F21200E90DA1 /* DCTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTools.m; sourceTree = "<group>"; };
 		09F4C6E721A6EBD40018F312 /* BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BButton.h; sourceTree = "<group>"; };
 		09F4C6E821A6EBD40018F312 /* BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BButton.m; sourceTree = "<group>"; };
 		09F4C6E921A6EBD40018F312 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
@@ -120,6 +83,49 @@
 		09F4C6ED21A6EBD40018F312 /* UIColor+BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BButton.h"; sourceTree = "<group>"; };
 		09F4C6EE21A6EBD40018F312 /* UIColor+BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BButton.m"; sourceTree = "<group>"; };
 		09FF0300205EFB8800BCBA8D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2B127B6E297B80F300DF94E4 /* TRMalleableFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRMalleableFrameView.h; path = ../DiscordClassic/TRMalleableFrameView.h; sourceTree = "<group>"; };
+		2B127B6F297B80F300DF94E4 /* TRMalleableFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRMalleableFrameView.m; path = ../DiscordClassic/TRMalleableFrameView.m; sourceTree = "<group>"; };
+		2B127B76297B816300DF94E4 /* Discord Classic-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Discord Classic-Info.plist"; path = "DiscordClassic/Discord Classic-Info.plist"; sourceTree = "<group>"; };
+		2B127B77297B816300DF94E4 /* Discord Classic-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Discord Classic-Prefix.pch"; path = "DiscordClassic/Discord Classic-Prefix.pch"; sourceTree = "<group>"; };
+		2B127B78297B816300DF94E4 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = en.lproj; path = DiscordClassic/en.lproj; sourceTree = "<group>"; };
+		2B127B7F297B829100DF94E4 /* DCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCAppDelegate.m; path = DiscordClassic/DCAppDelegate.m; sourceTree = "<group>"; };
+		2B127B80297B829100DF94E4 /* DCChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCChannel.m; path = DiscordClassic/DCChannel.m; sourceTree = "<group>"; };
+		2B127B81297B829100DF94E4 /* DCChannelListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCChannelListViewController.m; path = DiscordClassic/DCChannelListViewController.m; sourceTree = "<group>"; };
+		2B127B82297B829100DF94E4 /* DCChatTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCChatTableCell.m; path = DiscordClassic/DCChatTableCell.m; sourceTree = "<group>"; };
+		2B127B83297B829100DF94E4 /* DCChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCChatViewController.m; path = DiscordClassic/DCChatViewController.m; sourceTree = "<group>"; };
+		2B127B84297B829100DF94E4 /* DCGuild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCGuild.m; path = DiscordClassic/DCGuild.m; sourceTree = "<group>"; };
+		2B127B85297B829100DF94E4 /* DCGuildListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCGuildListViewController.m; path = DiscordClassic/DCGuildListViewController.m; sourceTree = "<group>"; };
+		2B127B86297B829100DF94E4 /* DCImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCImageViewController.m; path = DiscordClassic/DCImageViewController.m; sourceTree = "<group>"; };
+		2B127B87297B829100DF94E4 /* DCInfoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCInfoPageViewController.m; path = DiscordClassic/DCInfoPageViewController.m; sourceTree = "<group>"; };
+		2B127B88297B829100DF94E4 /* DCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCMessage.m; path = DiscordClassic/DCMessage.m; sourceTree = "<group>"; };
+		2B127B89297B829100DF94E4 /* DCServerCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCServerCommunicator.m; path = DiscordClassic/DCServerCommunicator.m; sourceTree = "<group>"; };
+		2B127B8A297B829100DF94E4 /* DCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCSettingsViewController.m; path = DiscordClassic/DCSettingsViewController.m; sourceTree = "<group>"; };
+		2B127B8B297B829100DF94E4 /* DCTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCTools.m; path = DiscordClassic/DCTools.m; sourceTree = "<group>"; };
+		2B127B8C297B829100DF94E4 /* DCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCUser.m; path = DiscordClassic/DCUser.m; sourceTree = "<group>"; };
+		2B127B8D297B829100DF94E4 /* DCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCViewController.m; path = DiscordClassic/DCViewController.m; sourceTree = "<group>"; };
+		2B127B8E297B829100DF94E4 /* DCWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCWelcomeViewController.m; path = DiscordClassic/DCWelcomeViewController.m; sourceTree = "<group>"; };
+		2B127B8F297B829100DF94E4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DiscordClassic/main.m; sourceTree = "<group>"; };
+		2B127B90297B829100DF94E4 /* TRMalleableFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRMalleableFrameView.m; path = DiscordClassic/TRMalleableFrameView.m; sourceTree = "<group>"; };
+		2B127BA3297B82A000DF94E4 /* DCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCAppDelegate.h; path = DiscordClassic/DCAppDelegate.h; sourceTree = "<group>"; };
+		2B127BA4297B82A000DF94E4 /* DCChannel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCChannel.h; path = DiscordClassic/DCChannel.h; sourceTree = "<group>"; };
+		2B127BA5297B82A000DF94E4 /* DCChannelListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCChannelListViewController.h; path = DiscordClassic/DCChannelListViewController.h; sourceTree = "<group>"; };
+		2B127BA6297B82A000DF94E4 /* DCChatTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCChatTableCell.h; path = DiscordClassic/DCChatTableCell.h; sourceTree = "<group>"; };
+		2B127BA7297B82A000DF94E4 /* DCChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCChatViewController.h; path = DiscordClassic/DCChatViewController.h; sourceTree = "<group>"; };
+		2B127BA8297B82A000DF94E4 /* DCGuild.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCGuild.h; path = DiscordClassic/DCGuild.h; sourceTree = "<group>"; };
+		2B127BA9297B82A000DF94E4 /* DCGuildListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCGuildListViewController.h; path = DiscordClassic/DCGuildListViewController.h; sourceTree = "<group>"; };
+		2B127BAA297B82A000DF94E4 /* DCImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCImageViewController.h; path = DiscordClassic/DCImageViewController.h; sourceTree = "<group>"; };
+		2B127BAB297B82A000DF94E4 /* DCInfoPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCInfoPageViewController.h; path = DiscordClassic/DCInfoPageViewController.h; sourceTree = "<group>"; };
+		2B127BAC297B82A000DF94E4 /* DCMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCMessage.h; path = DiscordClassic/DCMessage.h; sourceTree = "<group>"; };
+		2B127BAD297B82A000DF94E4 /* DCServerCommunicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCServerCommunicator.h; path = DiscordClassic/DCServerCommunicator.h; sourceTree = "<group>"; };
+		2B127BAE297B82A000DF94E4 /* DCSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCSettingsViewController.h; path = DiscordClassic/DCSettingsViewController.h; sourceTree = "<group>"; };
+		2B127BAF297B82A000DF94E4 /* DCTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCTools.h; path = DiscordClassic/DCTools.h; sourceTree = "<group>"; };
+		2B127BB0297B82A000DF94E4 /* DCUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCUser.h; path = DiscordClassic/DCUser.h; sourceTree = "<group>"; };
+		2B127BB1297B82A000DF94E4 /* DCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCViewController.h; path = DiscordClassic/DCViewController.h; sourceTree = "<group>"; };
+		2B127BB2297B82A000DF94E4 /* DCWelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCWelcomeViewController.h; path = DiscordClassic/DCWelcomeViewController.h; sourceTree = "<group>"; };
+		2B127BB3297B82A000DF94E4 /* TRMalleableFrameView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TRMalleableFrameView.h; path = DiscordClassic/TRMalleableFrameView.h; sourceTree = "<group>"; };
+		2B127BB4297B82D900DF94E4 /* DCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DCViewController.xib; path = DiscordClassic/DCViewController.xib; sourceTree = "<group>"; };
+		2B127BB8297B82FC00DF94E4 /* DCChatTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCChatTableCell.xib; sourceTree = "<group>"; };
+		2B127BBA297B830300DF94E4 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,9 +156,10 @@
 		096DD77621A6EB1800C7A3B1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2B127BBA297B830300DF94E4 /* Storyboard.storyboard */,
+				2B127BB8297B82FC00DF94E4 /* DCChatTableCell.xib */,
+				2B127BB4297B82D900DF94E4 /* DCViewController.xib */,
 				09F4C6E621A6EBD40018F312 /* BButton */,
-				0952845F2055EFCF00760073 /* TRMalleableFrameView.h */,
-				095284602055EFD000760073 /* TRMalleableFrameView.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -160,13 +167,16 @@
 		09C6B915204A0F54007EAC26 = {
 			isa = PBXGroup;
 			children = (
+				2B127B7E297B826400DF94E4 /* DC */,
 				09A2A3132072674500F3D98C /* Icon.png */,
 				09A2A3112072674000F3D98C /* Icon@2x.png */,
 				09FF0300205EFB8800BCBA8D /* Default-568h@2x.png */,
 				09E2DB7A20789C9700267A62 /* UINavigationBarTexture.png */,
 				09E2DB7B20789C9700267A62 /* UINavigationBarTexture@2x.png */,
+				2B127B76297B816300DF94E4 /* Discord Classic-Info.plist */,
+				2B127B77297B816300DF94E4 /* Discord Classic-Prefix.pch */,
+				2B127B78297B816300DF94E4 /* en.lproj */,
 				095284622055EFDA00760073 /* Etc */,
-				09C6B92A204A0F54007EAC26 /* Discord Classic */,
 				09C6B923204A0F54007EAC26 /* Frameworks */,
 				09C0F691204E4823000C8EA6 /* Discord.app */,
 			);
@@ -183,59 +193,6 @@
 				09C6B945204A0F55007EAC26 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		09C6B92A204A0F54007EAC26 /* Discord Classic */ = {
-			isa = PBXGroup;
-			children = (
-				09C6B933204A0F54007EAC26 /* DCAppDelegate.h */,
-				09C6B934204A0F54007EAC26 /* DCAppDelegate.m */,
-				09E183B8205EF64700FE90E8 /* DCViewController.h */,
-				09E183B9205EF64700FE90E8 /* DCViewController.m */,
-				09E183BB205EF65000FE90E8 /* DCGuildListViewController.h */,
-				09E183BC205EF65000FE90E8 /* DCGuildListViewController.m */,
-				09685285204D9D590089DE45 /* DCChannelListViewController.h */,
-				09685286204D9D590089DE45 /* DCChannelListViewController.m */,
-				09DD1FA0204F35FD00153EC7 /* DCChatViewController.h */,
-				09DD1FA1204F35FD00153EC7 /* DCChatViewController.m */,
-				09D84D0A205F36B90070020A /* DCSettingsViewController.h */,
-				09D84D0B205F36B90070020A /* DCSettingsViewController.m */,
-				09C8E2EC204C3B64006A1422 /* Storyboard.storyboard */,
-				091D28C821A9D75700C60BEC /* DCInfoPageViewController.h */,
-				091D28C921A9D75700C60BEC /* DCInfoPageViewController.m */,
-				096DD77321A6E62200C7A3B1 /* DCWelcomeViewController.h */,
-				096DD77421A6E62200C7A3B1 /* DCWelcomeViewController.m */,
-				09C344B521A0B984005F8CEE /* DCImageViewController.h */,
-				09C344B621A0B984005F8CEE /* DCImageViewController.m */,
-				09A4EA6D2079266800DECFD6 /* DCChatTableCell.h */,
-				09A4EA6E2079266800DECFD6 /* DCChatTableCell.m */,
-				09A4EA662079220E00DECFD6 /* DCChatTableCell.xib */,
-				09C8E289204C2BFD006A1422 /* DCServerCommunicator.h */,
-				09C8E28A204C2BFD006A1422 /* DCServerCommunicator.m */,
-				09E3ED242069F21200E90DA1 /* DCTools.h */,
-				09E3ED252069F21200E90DA1 /* DCTools.m */,
-				09260EC520575AE900083813 /* DCGuild.h */,
-				09260EC620575AE900083813 /* DCGuild.m */,
-				09260EC820575BB200083813 /* DCChannel.h */,
-				09260EC920575BB200083813 /* DCChannel.m */,
-				090C6BCF20784DDD00EC552F /* DCMessage.h */,
-				09D776982189427100609134 /* DCMessage.m */,
-				09A3B6D121A0604400C2411F /* DCUser.h */,
-				09A3B6D221A0604400C2411F /* DCUser.m */,
-				09C6B92B204A0F54007EAC26 /* Supporting Files */,
-			);
-			path = "Discord Classic";
-			sourceTree = "<group>";
-		};
-		09C6B92B204A0F54007EAC26 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				09C6B92C204A0F54007EAC26 /* Discord Classic-Info.plist */,
-				09C6B92D204A0F54007EAC26 /* InfoPlist.strings */,
-				09C6B930204A0F54007EAC26 /* main.m */,
-				09C6B932204A0F54007EAC26 /* Discord Classic-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		09C6B97D204A1782007EAC26 /* Websocket */ = {
@@ -259,6 +216,8 @@
 		09F4C6E621A6EBD40018F312 /* BButton */ = {
 			isa = PBXGroup;
 			children = (
+				2B127B6E297B80F300DF94E4 /* TRMalleableFrameView.h */,
+				2B127B6F297B80F300DF94E4 /* TRMalleableFrameView.m */,
 				09F4C6E721A6EBD40018F312 /* BButton.h */,
 				09F4C6E821A6EBD40018F312 /* BButton.m */,
 				09F4C6E921A6EBD40018F312 /* NSString+FontAwesome.h */,
@@ -276,6 +235,48 @@
 				09F4C6EC21A6EBD40018F312 /* FontAwesome.ttf */,
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		2B127B7E297B826400DF94E4 /* DC */ = {
+			isa = PBXGroup;
+			children = (
+				2B127BA3297B82A000DF94E4 /* DCAppDelegate.h */,
+				2B127BA4297B82A000DF94E4 /* DCChannel.h */,
+				2B127BA5297B82A000DF94E4 /* DCChannelListViewController.h */,
+				2B127BA6297B82A000DF94E4 /* DCChatTableCell.h */,
+				2B127BA7297B82A000DF94E4 /* DCChatViewController.h */,
+				2B127BA8297B82A000DF94E4 /* DCGuild.h */,
+				2B127BA9297B82A000DF94E4 /* DCGuildListViewController.h */,
+				2B127BAA297B82A000DF94E4 /* DCImageViewController.h */,
+				2B127BAB297B82A000DF94E4 /* DCInfoPageViewController.h */,
+				2B127BAC297B82A000DF94E4 /* DCMessage.h */,
+				2B127BAD297B82A000DF94E4 /* DCServerCommunicator.h */,
+				2B127BAE297B82A000DF94E4 /* DCSettingsViewController.h */,
+				2B127BAF297B82A000DF94E4 /* DCTools.h */,
+				2B127BB0297B82A000DF94E4 /* DCUser.h */,
+				2B127BB1297B82A000DF94E4 /* DCViewController.h */,
+				2B127BB2297B82A000DF94E4 /* DCWelcomeViewController.h */,
+				2B127BB3297B82A000DF94E4 /* TRMalleableFrameView.h */,
+				2B127B7F297B829100DF94E4 /* DCAppDelegate.m */,
+				2B127B80297B829100DF94E4 /* DCChannel.m */,
+				2B127B81297B829100DF94E4 /* DCChannelListViewController.m */,
+				2B127B82297B829100DF94E4 /* DCChatTableCell.m */,
+				2B127B83297B829100DF94E4 /* DCChatViewController.m */,
+				2B127B84297B829100DF94E4 /* DCGuild.m */,
+				2B127B85297B829100DF94E4 /* DCGuildListViewController.m */,
+				2B127B86297B829100DF94E4 /* DCImageViewController.m */,
+				2B127B87297B829100DF94E4 /* DCInfoPageViewController.m */,
+				2B127B88297B829100DF94E4 /* DCMessage.m */,
+				2B127B89297B829100DF94E4 /* DCServerCommunicator.m */,
+				2B127B8A297B829100DF94E4 /* DCSettingsViewController.m */,
+				2B127B8B297B829100DF94E4 /* DCTools.m */,
+				2B127B8C297B829100DF94E4 /* DCUser.m */,
+				2B127B8D297B829100DF94E4 /* DCViewController.m */,
+				2B127B8E297B829100DF94E4 /* DCWelcomeViewController.m */,
+				2B127B8F297B829100DF94E4 /* main.m */,
+				2B127B90297B829100DF94E4 /* TRMalleableFrameView.m */,
+			);
+			name = DC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,15 +332,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09C6B92F204A0F54007EAC26 /* InfoPlist.strings in Resources */,
-				09C8E2ED204C3B64006A1422 /* Storyboard.storyboard in Resources */,
 				09FF0301205EFB8800BCBA8D /* Default-568h@2x.png in Resources */,
+				2B127BBB297B830300DF94E4 /* Storyboard.storyboard in Resources */,
 				09A2A3122072674000F3D98C /* Icon@2x.png in Resources */,
 				09A2A3142072674500F3D98C /* Icon.png in Resources */,
+				2B127B7B297B816300DF94E4 /* Discord Classic-Info.plist in Resources */,
 				09E2DB7C20789C9700267A62 /* UINavigationBarTexture.png in Resources */,
+				2B127BB9297B82FC00DF94E4 /* DCChatTableCell.xib in Resources */,
 				09E2DB7D20789C9700267A62 /* UINavigationBarTexture@2x.png in Resources */,
-				09A4EA672079220E00DECFD6 /* DCChatTableCell.xib in Resources */,
+				2B127B7C297B816300DF94E4 /* en.lproj in Resources */,
 				09F4C6F121A6EBD40018F312 /* FontAwesome.ttf in Resources */,
+				2B127BB5297B82D900DF94E4 /* DCViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +360,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "export CODESIGN_ALLOCATE=/Library/JailCoder/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Library/JailCoder/Entitlements/Entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -366,47 +369,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09C6B931204A0F54007EAC26 /* main.m in Sources */,
-				09C6B935204A0F54007EAC26 /* DCAppDelegate.m in Sources */,
+				2B127BA1297B829100DF94E4 /* main.m in Sources */,
 				09C6B98F204A2568007EAC26 /* WSWebSocket.m in Sources */,
+				2B127B70297B80F300DF94E4 /* TRMalleableFrameView.m in Sources */,
 				09C6B990204A256E007EAC26 /* NSString+Base64.m in Sources */,
+				2B127B96297B829100DF94E4 /* DCGuild.m in Sources */,
+				2B127B91297B829100DF94E4 /* DCAppDelegate.m in Sources */,
+				2B127B94297B829100DF94E4 /* DCChatTableCell.m in Sources */,
+				2B127B9A297B829100DF94E4 /* DCMessage.m in Sources */,
 				09C6B991204A256E007EAC26 /* WSFrame.m in Sources */,
+				2B127B9B297B829100DF94E4 /* DCServerCommunicator.m in Sources */,
 				09C6B992204A256E007EAC26 /* WSMessage.m in Sources */,
+				2B127B92297B829100DF94E4 /* DCChannel.m in Sources */,
 				09C6B993204A256E007EAC26 /* WSMessageProcessor.m in Sources */,
-				09C8E28B204C2BFD006A1422 /* DCServerCommunicator.m in Sources */,
-				09685287204D9D590089DE45 /* DCChannelListViewController.m in Sources */,
-				09DD1FA2204F35FD00153EC7 /* DCChatViewController.m in Sources */,
-				095284612055EFD000760073 /* TRMalleableFrameView.m in Sources */,
-				09260EC720575AE900083813 /* DCGuild.m in Sources */,
-				09260ECA20575BB200083813 /* DCChannel.m in Sources */,
-				09FF02F7205EF9DD00BCBA8D /* DCGuildListViewController.m in Sources */,
-				09FF02F8205EF9DF00BCBA8D /* DCViewController.m in Sources */,
-				09D84D0C205F36B90070020A /* DCSettingsViewController.m in Sources */,
-				09E3ED262069F21200E90DA1 /* DCTools.m in Sources */,
-				09A4EA6F2079266800DECFD6 /* DCChatTableCell.m in Sources */,
-				09D776992189427100609134 /* DCMessage.m in Sources */,
-				09A3B6D321A0604500C2411F /* DCUser.m in Sources */,
-				09C344B721A0B984005F8CEE /* DCImageViewController.m in Sources */,
-				096DD77521A6E62200C7A3B1 /* DCWelcomeViewController.m in Sources */,
+				2B127B9D297B829100DF94E4 /* DCTools.m in Sources */,
 				09F4C6EF21A6EBD40018F312 /* BButton.m in Sources */,
 				09F4C6F021A6EBD40018F312 /* NSString+FontAwesome.m in Sources */,
+				2B127B99297B829100DF94E4 /* DCInfoPageViewController.m in Sources */,
+				2B127BA0297B829100DF94E4 /* DCWelcomeViewController.m in Sources */,
+				2B127B95297B829100DF94E4 /* DCChatViewController.m in Sources */,
+				2B127BA2297B829100DF94E4 /* TRMalleableFrameView.m in Sources */,
+				2B127B97297B829100DF94E4 /* DCGuildListViewController.m in Sources */,
 				09F4C6F221A6EBD40018F312 /* UIColor+BButton.m in Sources */,
-				091D28CA21A9D75700C60BEC /* DCInfoPageViewController.m in Sources */,
+				2B127B9F297B829100DF94E4 /* DCViewController.m in Sources */,
+				2B127B93297B829100DF94E4 /* DCChannelListViewController.m in Sources */,
+				2B127B9E297B829100DF94E4 /* DCUser.m in Sources */,
+				2B127B98297B829100DF94E4 /* DCImageViewController.m in Sources */,
+				2B127B9C297B829100DF94E4 /* DCSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		09C6B92D204A0F54007EAC26 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09C6B92E204A0F54007EAC26 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		09C6B954204A0F55007EAC26 /* Debug */ = {
@@ -470,9 +463,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COMPRESS_PNG_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Discord Classic/Discord Classic-Prefix.pch";
-				INFOPLIST_FILE = "Discord Classic/Discord Classic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				GCC_PREFIX_HEADER = "DiscordClassic/Discord Classic-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DiscordClassic/Discord Classic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos6.1;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -489,9 +482,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COMPRESS_PNG_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Discord Classic/Discord Classic-Prefix.pch";
-				INFOPLIST_FILE = "Discord Classic/Discord Classic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				GCC_PREFIX_HEADER = "DiscordClassic/Discord Classic-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DiscordClassic/Discord Classic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos6.1;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";

@@ -132,10 +132,6 @@ typedef enum {
     return self;
 }
 
-- (void)dealloc {
-    dispatch_release(callbackQueue);
-}
-
 
 #pragma mark - Callbacks
 

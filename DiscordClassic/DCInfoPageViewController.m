@@ -22,7 +22,7 @@
 - (void)didReceiveMemoryWarning{[super didReceiveMemoryWarning];}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-	[UIApplication.sharedApplication openURL:[NSURL URLWithString:self.creditLinks[indexPath.row + indexPath.section * 3]]];
+	[UIApplication.sharedApplication openURL:[NSURL URLWithString:[self.creditLinks objectAtIndex:(indexPath.row + indexPath.section * 3)]]];
 	[tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 

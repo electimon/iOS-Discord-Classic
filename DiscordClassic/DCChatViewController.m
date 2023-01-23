@@ -19,7 +19,6 @@
 @interface DCChatViewController()
 @property int numberOfMessagesLoaded;
 @property UIImage* selectedImage;
-@property UIRefreshControl *refreshControl;
 @end
 
 @implementation DCChatViewController
@@ -38,14 +37,6 @@
 	[NSNotificationCenter.defaultCenter addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
 	
 	[NSNotificationCenter.defaultCenter addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-	
-	
-	self.refreshControl = UIRefreshControl.new;
-	self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Earlier messages"];
-	
-	[self.chatTableView addSubview:self.refreshControl];
-	
-	[self.refreshControl addTarget:self action:@selector(get50MoreMessages:) forControlEvents:UIControlEventValueChanged];
 }
 
 
@@ -56,8 +47,6 @@
 	
 		[self getMessages:50 beforeMessage:nil];
 	}
-	
-	[self.refreshControl endRefreshing];
 }
 
 
@@ -101,7 +90,6 @@
 		});
 	}
 	
-	[self.refreshControl endRefreshing];
 }
 
 
@@ -115,8 +103,13 @@
 	
 	[cell.authorLabel setText:messageAtRowIndex.author.username];
 	
+    // Type 2 is user left, should be red
+    if (messageAtRowIndex.type == 2) {
+        [cell.contentTextView setTextColor:[UIColor redColor]];
+    } else {
+        [cell.contentTextView setTextColor:[UIColor whiteColor]];
+    }
 	[cell.contentTextView setText:messageAtRowIndex.content];
-	
 	[cell.contentTextView setHeight:[cell.contentTextView sizeThatFits:CGSizeMake(cell.contentTextView.width, MAXFLOAT)].height];
 	
 	[cell.profileImage setImage:messageAtRowIndex.author.profileImage];
@@ -158,7 +151,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-	self.selectedMessage = self.messages[indexPath.row];
+	self.selectedMessage = [self.messages objectAtIndex:indexPath.row];
 	
 	if([self.selectedMessage.author.snowflake isEqualToString: DCServerCommunicator.sharedInstance.snowflake]){
 		UIActionSheet *messageActionSheet = [[UIActionSheet alloc] initWithTitle:self.selectedMessage.content delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Delete" otherButtonTitles:nil];
@@ -282,5 +275,5 @@
 }
 
 
--(void)get50MoreMessages:(UIRefreshControl *)control {[self getMessages:50 beforeMessage:[self.messages objectAtIndex:0]];}
+//-(void)get50MoreMessages:(UIRefreshControl *)control {[self getMessages:50 beforeMessage:[self.messages objectAtIndex:0]];}
 @end

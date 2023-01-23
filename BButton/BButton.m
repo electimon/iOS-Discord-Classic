@@ -94,7 +94,7 @@
     self = [self initWithFrame:frame color:aColor];
     if(self) {
         self.fastTitleLabel.font = [UIFont fontWithName:@"FontAwesome" size:fontSize];
-        self.fastTitleLabel.textAlignment = NSTextAlignmentCenter;
+        self.fastTitleLabel.textAlignment = UITextAlignmentCenter;
         [self setTitle:[NSString stringFromAwesomeIcon:icon] forState:UIControlStateNormal];
     }
     return self;
@@ -353,7 +353,7 @@
 
 - (UILabel*)fastTitleLabel
 {
-    return (self.subviews.count == 1) ? self.subviews[0] : self.titleLabel;
+    return (self.subviews.count == 1) ? [self.subviews objectAtIndex:0] : self.titleLabel;
 }
 
 @end

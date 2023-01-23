@@ -1,0 +1,3 @@
+Changelog for v1.3.2:\n
+\n
+* User DMs are now sorted by most recent message

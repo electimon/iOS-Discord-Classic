@@ -62,6 +62,7 @@
 		
 		//Establish websocket connection with Discord
 		NSURL *websocketUrl = [NSURL URLWithString:self.gatewayURL];
+		NSLog(@"websocket url = %@", websocketUrl);
 		self.websocket = [WSWebSocket.alloc initWithURL:websocketUrl protocols:nil];
 		
 		//To prevent retain cycle
@@ -71,7 +72,9 @@
 			
 			//Parse JSON to a dictionary
 			NSDictionary *parsedJsonResponse = [DCTools parseJSON:responseString];
-			
+			if (!parsedJsonResponse)
+				return;
+
 			//Data values for easy access
 			int op = [[parsedJsonResponse valueForKey:@"op"] integerValue];
 			NSDictionary* d = [parsedJsonResponse valueForKey:@"d"];
@@ -173,7 +176,6 @@
 						DCGuild* privateGuild = DCGuild.new;
 						privateGuild.name = @"Direct Messages";
 						privateGuild.channels = NSMutableArray.new;
-						
 						for(NSDictionary* privateChannel in [d valueForKey:@"private_channels"]){
 							
 							DCChannel* newChannel = DCChannel.new;
@@ -192,23 +194,32 @@
 								NSMutableString* fullChannelName = [@"@" mutableCopy];
 								
 								NSArray* privateChannelMembers = [privateChannel valueForKey:@"recipients"];
-								for(NSDictionary* privateChannelMember in privateChannelMembers){
-									//add comma between member names
-									if([privateChannelMembers indexOfObject:privateChannelMember] != 0)
+                                // We should check for cases where a group dm has dissolved and only contains the user
+                                // in these cases recipients will be empty, the official discord client treats these
+                                // groups as Unnamed
+                                if ([privateChannelMembers count] != 0) {
+                                    for(NSDictionary* privateChannelMember in privateChannelMembers){
+                                        //add comma between member names
+                                        if([privateChannelMembers indexOfObject:privateChannelMember] != 0)
 										[fullChannelName appendString:@", @"];
 									
-									NSString* memberName = [privateChannelMember valueForKey:@"username"];
-									[fullChannelName appendString:memberName];
-									
-									newChannel.name = fullChannelName;
-								}
+                                        NSString* memberName = [privateChannelMember valueForKey:@"username"];
+                                        [fullChannelName appendString:memberName];
+                                        newChannel.name = fullChannelName;
+                                    }
+                                } else {
+                                    newChannel.name = @"Unnamed";
+                                }
 							}
-							
 							[privateGuild.channels addObject:newChannel];
-							[weakSelf.channels setObject:newChannel forKey:newChannel.snowflake];
+						}
+						// Sort the DMs list by most recent...
+						NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"lastMessageId" ascending:NO selector:@selector(localizedStandardCompare:)];
+						[privateGuild.channels sortUsingDescriptors:@[sortDescriptor]];
+						for (DCChannel *channel in privateGuild.channels) {
+							[weakSelf.channels setObject:channel forKey:channel.snowflake];
 						}
 						[weakSelf.guilds addObject:privateGuild];
-						
 						
 						//Get servers (guilds) the user is a member of
 						for(NSDictionary* jsonGuild in [d valueForKey:@"guilds"])
@@ -273,7 +284,7 @@
 							[channelOfMessage checkIfRead];
 							
 							dispatch_async(dispatch_get_main_queue(), ^{
-								[NSNotificationCenter.defaultCenter postNotificationName:@"MESSAGE ACK" object:weakSelf];
+								[NSNotificationCenter.defaultCenter postNotificationName:@"MESSAGE ACK" object:weakSelf];	
 							});
 						}
 					}
@@ -291,6 +302,10 @@
 					
 					if([t isEqualToString:@"GUILD_CREATE"])
 						[weakSelf.guilds addObject:[DCTools convertJsonGuild:d]];
+                    
+                    if ([t isEqualToString:@"NOTIFICATION_CREATE"]) {
+                        NSLog(@"d = %@", d);
+                    }
 				}
 					break;
 					
@@ -313,6 +328,9 @@
 	}
 }
 
+- (void)startVoiceCommunicator {
+	
+}
 
 - (void)sendResume{
 	[self.alertView setTitle:@"Resuming"];
