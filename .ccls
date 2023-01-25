@@ -1,0 +1,11 @@
+clang
+--target=arm-apple-darwin9
+-miphoneos-version-min=5.0
+-I/root/sdks/iPhoneOS5.1.sdk/usr/include
+-I/mnt/Public/Projects/iOS-Discord-Classic-master/Websocket
+-fobjc-nonfragile-abi
+-fblocks
+-fobjc-arc
+-include/mnt/Public/Projects/iOS-Discord-Classic-master/DiscordClassic/Discord Classic-Prefix.pch
+%objective-c
+%h

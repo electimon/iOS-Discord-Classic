@@ -23,6 +23,7 @@
 @property bool muted;
 @property int type;
 @property DCGuild* parentGuild;
+@property NSArray* users;
 
 -(void)checkIfRead;
 - (void)sendMessage:(NSString*)message;

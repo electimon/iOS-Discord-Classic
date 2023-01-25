@@ -33,6 +33,7 @@
 
 + (DCServerCommunicator *)sharedInstance;
 - (void)startCommunicator;
+- (void)startVoiceCommunicator;
 - (void)sendResume;
 - (void)reconnect;
 - (void)sendHeartbeat:(NSTimer *)timer;

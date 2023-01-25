@@ -158,7 +158,6 @@
 					
 					//recieved READY
 					if([t isEqualToString:@"READY"]){
-						
 						weakSelf.didAuthenticate = true;
 						NSLog(@"Did authenticate!");
 						
@@ -177,13 +176,28 @@
 						privateGuild.name = @"Direct Messages";
 						privateGuild.channels = NSMutableArray.new;
 						for(NSDictionary* privateChannel in [d valueForKey:@"private_channels"]){
+							// Initialize users array for the member list
+							NSMutableArray *users = NSMutableArray.new;
+							NSMutableDictionary *usersDict;
+							for (NSDictionary* user in [privateChannel objectForKey:@"recipients"]) {
+								usersDict = NSMutableDictionary.new;
+								[usersDict setObject:[user valueForKey:@"username"] forKey:@"username"];
+								[usersDict setObject:[user valueForKey:@"avatar"] forKey:@"avatar"];
+								[users addObject:usersDict];
+							}
+							// Add self to users list
+							usersDict = NSMutableDictionary.new;
+							[usersDict setObject:@"You" forKey:@"username"];
+							[usersDict setObject:@"TEMP" forKey:@"avatar"];
+							[users addObject:usersDict];
 							
 							DCChannel* newChannel = DCChannel.new;
 							newChannel.snowflake = [privateChannel valueForKey:@"id"];
 							newChannel.lastMessageId = [privateChannel valueForKey:@"last_message_id"];
 							newChannel.parentGuild = privateGuild;
 							newChannel.type = 1;
-							
+							newChannel.users = users;
+
 							NSString* privateChannelName = [privateChannel valueForKey:@"name"];
 							
 							//Some private channels dont have names, check if nil
@@ -306,6 +320,14 @@
                     if ([t isEqualToString:@"NOTIFICATION_CREATE"]) {
                         NSLog(@"d = %@", d);
                     }
+
+					if ([t isEqualToString:@"VOICE_STATE_UPDATE"]) {
+						NSLog(@"d = %@", d);
+					}
+
+					if ([t isEqualToString:@"VOICE_SERVER_UPDATE"]) {
+						NSLog(@"d = %@", d);
+					}
 				}
 					break;
 					
@@ -329,7 +351,20 @@
 }
 
 - (void)startVoiceCommunicator {
-	
+	NSDictionary *dict = @{
+		@"op": @4,
+		@"d": @{
+			@"guild_id": self.selectedGuild.snowflake,
+			@"channel_id": self.selectedChannel.snowflake,
+			@"self_mute": @false,
+			@"self_deaf": @false
+		}
+	};
+	NSError *error; 
+	NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict 
+													options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
+														error:&error];
+	[self.websocket sendText:[[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]];
 }
 
 - (void)sendResume{

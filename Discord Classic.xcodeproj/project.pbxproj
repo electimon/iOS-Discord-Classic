@@ -50,6 +50,7 @@
 		2B127BB5297B82D900DF94E4 /* DCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B127BB4297B82D900DF94E4 /* DCViewController.xib */; };
 		2B127BB9297B82FC00DF94E4 /* DCChatTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B127BB8297B82FC00DF94E4 /* DCChatTableCell.xib */; };
 		2B127BBB297B830300DF94E4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B127BBA297B830300DF94E4 /* Storyboard.storyboard */; };
+		2B127BBE297EFF0D00DF94E4 /* DCMembersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B127BBD297EFF0D00DF94E4 /* DCMembersViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,8 @@
 		2B127BB4297B82D900DF94E4 /* DCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DCViewController.xib; path = DiscordClassic/DCViewController.xib; sourceTree = "<group>"; };
 		2B127BB8297B82FC00DF94E4 /* DCChatTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCChatTableCell.xib; sourceTree = "<group>"; };
 		2B127BBA297B830300DF94E4 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		2B127BBC297EFF0D00DF94E4 /* DCMembersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCMembersViewController.h; path = DiscordClassic/DCMembersViewController.h; sourceTree = "<group>"; };
+		2B127BBD297EFF0D00DF94E4 /* DCMembersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCMembersViewController.m; path = DiscordClassic/DCMembersViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +278,8 @@
 				2B127B8E297B829100DF94E4 /* DCWelcomeViewController.m */,
 				2B127B8F297B829100DF94E4 /* main.m */,
 				2B127B90297B829100DF94E4 /* TRMalleableFrameView.m */,
+				2B127BBC297EFF0D00DF94E4 /* DCMembersViewController.h */,
+				2B127BBD297EFF0D00DF94E4 /* DCMembersViewController.m */,
 			);
 			name = DC;
 			sourceTree = "<group>";
@@ -378,6 +383,7 @@
 				2B127B94297B829100DF94E4 /* DCChatTableCell.m in Sources */,
 				2B127B9A297B829100DF94E4 /* DCMessage.m in Sources */,
 				09C6B991204A256E007EAC26 /* WSFrame.m in Sources */,
+				2B127BBE297EFF0D00DF94E4 /* DCMembersViewController.m in Sources */,
 				2B127B9B297B829100DF94E4 /* DCServerCommunicator.m in Sources */,
 				09C6B992204A256E007EAC26 /* WSMessage.m in Sources */,
 				2B127B92297B829100DF94E4 /* DCChannel.m in Sources */,

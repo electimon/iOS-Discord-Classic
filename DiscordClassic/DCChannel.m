@@ -17,7 +17,7 @@
 @end
 
 @implementation DCChannel
-
+@synthesize users;
 -(NSString *)description{
 	return [NSString stringWithFormat:@"[Channel] Snowflake: %@, Type: %i, Read: %d, Name: %@, Last Message ID: %@", self.snowflake, self.type, self.unread, self.name, self.lastMessageId];
 }

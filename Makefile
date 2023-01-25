@@ -47,7 +47,8 @@ OBJS+=  \
 	./BButton/BButton.o \
 	./BButton/NSString+FontAwesome.o \
 	./BButton/UIColor+BButton.o \
-	./DiscordClassic/DCInfoPageViewController.o
+	./DiscordClassic/DCInfoPageViewController.o \
+	./DiscordClassic/DCMembersViewController.o
 
 $(PROJECTNAME): \
 	./DiscordClassic/main.o \
@@ -75,7 +76,8 @@ $(PROJECTNAME): \
 	./BButton/BButton.o \
 	./BButton/NSString+FontAwesome.o \
 	./BButton/UIColor+BButton.o \
-	./DiscordClassic/DCInfoPageViewController.o
+	./DiscordClassic/DCInfoPageViewController.o \
+	./DiscordClassic/DCMembersViewController.o
 	mkdir -p xcbuild
 	$(CC) $(CFLAGS) $(LDFLAGS) $(filter %.o,$^) -o xcbuild/$@
 
@@ -155,6 +157,9 @@ $(PROJECTNAME): \
 	$(CC) -c $(CFLAGS)  $< -o $@
 
 ./DiscordClassic/DCInfoPageViewController.o: ./DiscordClassic/DCInfoPageViewController.m
+	$(CC) -c $(CFLAGS)  $< -o $@
+
+./DiscordClassic/DCMembersViewController.o: ./DiscordClassic/DCMembersViewController.m
 	$(CC) -c $(CFLAGS)  $< -o $@
 
 INFOPLIST:="DiscordClassic/Discord Classic-Info.plist"

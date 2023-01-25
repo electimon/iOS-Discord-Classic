@@ -59,7 +59,7 @@
 	DCServerCommunicator.sharedInstance.selectedChannel = [self.selectedGuild.channels objectAtIndex:indexPath.row];
 	
 	if (DCServerCommunicator.sharedInstance.selectedChannel.type == 2) {
-		NSLog(@"nice");
+		[DCServerCommunicator.sharedInstance startVoiceCommunicator];
 	} else {
 		NSLog(@"type == %i", DCServerCommunicator.sharedInstance.selectedChannel.type);
 		//Mark channel messages as read and refresh the channel object accordingly

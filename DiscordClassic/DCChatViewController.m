@@ -44,7 +44,7 @@
 	
 	if(DCServerCommunicator.sharedInstance.selectedChannel){
 		self.messages = NSMutableArray.new;
-	
+
 		[self getMessages:50 beforeMessage:nil];
 	}
 }
