@@ -1,3 +1,5 @@
-Changelog for v1.3.2:\n
+Changelog for v1.3.3:\n
 \n
-* User DMs are now sorted by most recent message
+* Fix Japanese messages not being sent
+\n
+* Add better way of doing chat toolbar keyboard animations

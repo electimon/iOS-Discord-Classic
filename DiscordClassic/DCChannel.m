@@ -29,22 +29,20 @@
 
 - (void)sendMessage:(NSString*)message {
 	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-		NSURL* channelURL = [NSURL URLWithString: [NSString stringWithFormat:@"https://discordapp.com/api/channels/%@/messages", self.snowflake]];
+		NSURL *channelURL = [NSURL URLWithString: [NSString stringWithFormat:@"https://discordapp.com/api/channels/%@/messages", self.snowflake]];
 		
 		NSMutableURLRequest *urlRequest=[NSMutableURLRequest requestWithURL:channelURL cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:1];
-		
-		NSString* messageString = [NSString stringWithFormat:@"{\"content\":\"%@\"}", message];
+
+		NSString *encodedMessage = [[NSString alloc]initWithData:[message dataUsingEncoding:NSNonLossyASCIIStringEncoding] encoding:NSUTF8StringEncoding];
+		NSString *messageString = [NSString stringWithFormat:@"{\"content\":\"%@\"}", encodedMessage];
 		
 		[urlRequest setHTTPMethod:@"POST"];
-		
 		[urlRequest setHTTPBody:[NSData dataWithBytes:[messageString UTF8String] length:[messageString length]]];
 		[urlRequest addValue:DCServerCommunicator.sharedInstance.token forHTTPHeaderField:@"Authorization"];
 		[urlRequest addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 		
-		
 		NSError *error = nil;
 		NSHTTPURLResponse *responseCode = nil;
-		
 		[DCTools checkData:[NSURLConnection sendSynchronousRequest:urlRequest returningResponse:&responseCode error:&error] withError:error];
 	});
 }
