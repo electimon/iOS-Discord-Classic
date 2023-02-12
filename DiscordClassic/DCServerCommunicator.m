@@ -251,9 +251,12 @@
 							
 							//Get the channel with the ID of readStateChannelId
 							DCChannel* channelOfReadstate = [weakSelf.channels objectForKey:readstateChannelId];
-							
-							channelOfReadstate.lastReadMessageId = readstateMessageId;
-							[channelOfReadstate checkIfRead];
+							if ([channelOfReadstate isKindOfClass:[DCChannel class]]) {
+								channelOfReadstate.lastReadMessageId = readstateMessageId;
+								[channelOfReadstate checkIfRead];
+							} else {
+								continue;
+							}
 						}
 						
 						dispatch_async(dispatch_get_main_queue(), ^{
@@ -293,13 +296,15 @@
 							[weakSelf.selectedChannel ackMessage:messageId];
 						}else{
 							DCChannel* channelOfMessage = [weakSelf.channels objectForKey:channelIdOfMessage];
-							channelOfMessage.lastMessageId = messageId;
-							
-							[channelOfMessage checkIfRead];
-							
-							dispatch_async(dispatch_get_main_queue(), ^{
-								[NSNotificationCenter.defaultCenter postNotificationName:@"MESSAGE ACK" object:weakSelf];	
-							});
+							if ([channelOfMessage isKindOfClass:[DCChannel class]]) {
+								channelOfMessage.lastMessageId = messageId;
+								
+								[channelOfMessage checkIfRead];
+								
+								dispatch_async(dispatch_get_main_queue(), ^{
+									[NSNotificationCenter.defaultCenter postNotificationName:@"MESSAGE ACK" object:weakSelf];	
+								});
+							}
 						}
 					}
 					

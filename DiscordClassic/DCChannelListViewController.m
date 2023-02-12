@@ -61,16 +61,18 @@
 	if (DCServerCommunicator.sharedInstance.selectedChannel.type == 2) {
 		[DCServerCommunicator.sharedInstance startVoiceCommunicator];
 	} else {
-		NSLog(@"type == %i", DCServerCommunicator.sharedInstance.selectedChannel.type);
-		//Mark channel messages as read and refresh the channel object accordingly
-		[DCServerCommunicator.sharedInstance.selectedChannel ackMessage:DCServerCommunicator.sharedInstance.selectedChannel.lastMessageId];
-		[DCServerCommunicator.sharedInstance.selectedChannel checkIfRead];
-		
-		//Remove the blue indicator since the channel has been read
-		[[self.tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
-		
-		//Transition to chat view
-		[self performSegueWithIdentifier:@"Channels to Chat" sender:self];
+		if ([DCServerCommunicator.sharedInstance.selectedChannel isKindOfClass:[DCChannel class]]) {
+			NSLog(@"type == %i", DCServerCommunicator.sharedInstance.selectedChannel.type);
+			//Mark channel messages as read and refresh the channel object accordingly
+			[DCServerCommunicator.sharedInstance.selectedChannel ackMessage:DCServerCommunicator.sharedInstance.selectedChannel.lastMessageId];
+			[DCServerCommunicator.sharedInstance.selectedChannel checkIfRead];
+			
+			//Remove the blue indicator since the channel has been read
+			[[self.tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+			
+			//Transition to chat view
+			[self performSegueWithIdentifier:@"Channels to Chat" sender:self];
+		}
 	}
 }
 

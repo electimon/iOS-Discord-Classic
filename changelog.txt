@@ -1,5 +1,3 @@
-Changelog for v1.3.3:\n
+Changelog for v1.3.4:\n
 \n
-* Fix Japanese messages not being sent
-\n
-* Add better way of doing chat toolbar keyboard animations
+* Guard usage of [DCChannel checkIfRead]
